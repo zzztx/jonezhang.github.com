@@ -53,9 +53,9 @@ This post will show you how to build a personal homepage.
 
 - 阿里云购买域名
 - 域名列表进行解析
-  - 记录类型：CNAME
-  - 主机记录：www
-  - 记录值：zzztx.github.io
+  - 记录类型：A
+  - 主机记录：@
+  - 记录值：ping zzztx.github.io后得到的ip值
   - TTL：10分钟
 
 ## Github Page：
