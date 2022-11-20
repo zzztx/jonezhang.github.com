@@ -1,0 +1,57 @@
+<footer id="footer">
+    <div class="has-background-grey-darker">
+        <div class="container columns">
+
+            <!--Blog-post Section-->
+            <div class="column has-text-white">
+                <h3>Recent Blogs</h3>
+                {% for post in site.posts offset: 0 limit:3 %}
+                <li>
+                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
+                </li>
+                {% endfor %}
+            </div>
+
+           <!--Link Section-->
+            <div class="column has-text-white">
+                <h3>Relate Links</h3>
+                {% for sitepage in site.html_pages offset: 4 %}
+                {% unless sitepage.url == '/'  limit: 2 %}
+                <li>
+                    <a href="https://www.ucas.ac.cn/" target="_blank" rel="noopener noreferrer">中国科学院大学</a>
+                </li>
+                <li>
+                    <a href="http://www.sia.cas.cn/" target="_blank" rel="noopener noreferrer">中科院沈阳自动化研究所</a> 
+                </li>
+                <li>
+                    <a href="https://www.nuc.edu.cn/" target="_blank" rel="noopener noreferrer">中北大学</a> 
+                </li>
+                {% endunless %}
+                {% endfor %}
+            </div>
+
+           <!--Link Section-->
+            <div class="column has-text-white">
+                <h3>Recently in Progress</h3>
+                {% for sitepage in site.html_pages offset: 4 %}
+                {% unless sitepage.url == '/'  limit: 2 %}
+                <li>
+                    <a>牙齿正畸：中国医科大学</a>
+                </li>
+                <li>
+                    <a>最近在读：冯友兰《中国哲学史》</a> 
+                </li>
+                <li>
+                    <a>刚刚入手：佳能MD200Ⅱ</a> 
+                </li>
+                {% endunless %}
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+    <div class="has-background-black has-text-centered has-text-white" id="credits">
+        <h3>These blogs are for personal study only . Please indicate the source for reprint .</h3>
+        <h3>If there are errors in some articles ,  please contact the author . Thanks and best wishes !</h3>
+    </div>
+</footer>

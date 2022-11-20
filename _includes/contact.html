@@ -1,0 +1,33 @@
+<section class="hero is-fullheight has-text-centered" id="contact">
+    <div class="hero-body">
+        <div class="container">
+            <h3 class="is-size-3 has-text-weight-semibold has-text-black is-marginless">
+                You Can Contact Me With
+            </h3>
+
+            <hr>
+
+            <div class="column is-full is-size-3">
+                <h3 class="is-size-5 has-text-weight-semibold has-text-black"><i class="fas fa-envelope"></i>：zzztx_email@163.com</h3>
+            </div>
+
+
+            {% unless site.email == %}
+            <a id="contact-button" href="http://www.github.com/{{site.github_username}}"
+                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                target="_blank">
+                <i class="fab fa-github"></i>Follow me on github
+            </a>
+            {% endunless %}
+
+            {% unless site.twitter_username == %}
+            <a id="contact-button" href="https://www.twitter.com/intent/tweet?screen_name={{site.twitter_username}}"
+                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined has-text-weight-semibold column is-two-fifths"
+                target="_blank">
+                <i class="fab fa-twitter"></i>Tweet me on Twitter
+            </a>
+            {% endunless %}
+
+        </div>
+    </div>
+</section>
