@@ -2,7 +2,7 @@
 title: Bulid Personal Homepage
 layout: post
 post-image: "assets/images/title/build_personal_homepage.png"
-description: Published on November 19, 2022.
+description: Published on November 20, 2022.
 tags:
 - technology
 - memo
