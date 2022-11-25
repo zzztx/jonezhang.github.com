@@ -15,8 +15,6 @@
            <!--Link Section-->
             <div class="column has-text-white">
                 <h3>Relate Links</h3>
-                {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
                     <a href="https://www.ucas.ac.cn/" target="_blank" rel="noopener noreferrer">中国科学院大学</a>
                 </li>
@@ -26,15 +24,11 @@
                 <li>
                     <a href="https://www.nuc.edu.cn/" target="_blank" rel="noopener noreferrer">中北大学</a> 
                 </li>
-                {% endunless %}
-                {% endfor %}
             </div>
 
            <!--Link Section-->
             <div class="column has-text-white">
                 <h3>Recently in Progress</h3>
-                {% for sitepage in site.html_pages offset: 4 %}
-                {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
                     <a>牙齿正畸：中国医科大学</a>
                 </li>
@@ -44,8 +38,6 @@
                 <li>
                     <a>刚刚入手：佳能MD200Ⅱ</a> 
                 </li>
-                {% endunless %}
-                {% endfor %}
             </div>
 
         </div>
